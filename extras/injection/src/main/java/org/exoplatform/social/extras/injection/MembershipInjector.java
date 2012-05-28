@@ -59,7 +59,7 @@ public class MembershipInjector extends AbstractSocialInjector {
     getLog().info("" + (toSpace - fromSpace + 1) + " space(s) has prefix '" + spacePrefix + " ' with " + (toUser - fromUser + 1) + " member(s) has prefix '" + userPrefix + "'");
       
     int floor = fromSpace;
-    for (int i = floor; i < toSpace; ++i) {
+    for (int i = floor; i <= toSpace; ++i) {
       generate(i, type, fromUser, toUser);
     }
     
@@ -83,7 +83,7 @@ public class MembershipInjector extends AbstractSocialInjector {
     
     Identity identity = null;
     
-    for(int i = from; i < to; ++i) {
+    for(int i = from; i <= to; ++i) {
       String username = userBase + i;
       identity = identityManager.getOrCreateIdentity(OrganizationIdentityProvider.NAME, username, false);
       if ("member".endsWith(type)) {
