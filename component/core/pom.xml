@@ -34,6 +34,10 @@
   <name>eXo Social Core Component</name>
   <description>eXo Social Core Component: People and Space</description>
 
+  <properties>
+    <source.folder>${basedir}/src/main/java/org/exoplatform/social/core</source.folder>
+  </properties>
+
   <build>
     <resources>
       <resource>
@@ -141,6 +145,25 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9</version>
+        <configuration>
+          <sourceFileIncludes>
+            <include>manager/ActivityManager.java</include>
+            <include>manager/IdentityManager.java</include>
+            <include>manager/RelationshipManager.java</include>
+            <include>space/spi/SpaceService.java</include>
+            <include>processor/I18NActivityProcessor.java</include>
+            <include>service/LinkProvider.java</include>
+          </sourceFileIncludes>
+          <sourcepath>${source.folder}</sourcepath>
+          <reportOutputDirectory>${project.build.directory}</reportOutputDirectory>
+          <destDir>myapidocs</destDir>
+        </configuration>
       </plugin>
 
     </plugins>
