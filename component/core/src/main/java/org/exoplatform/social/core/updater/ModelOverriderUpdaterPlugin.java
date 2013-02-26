@@ -58,7 +58,7 @@ public class ModelOverriderUpdaterPlugin extends UpgradeProductPlugin {
   }
 
   @Override
-  public boolean shouldProceedToUpgrade(String previousVersion, String newVersion) {
+  public boolean shouldProceedToUpgrade(String newVersion, String previousVersion) {
     return VersionComparator.isAfter(newVersion, previousVersion);
   }
 
