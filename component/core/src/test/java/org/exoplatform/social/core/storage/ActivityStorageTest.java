@@ -1298,7 +1298,7 @@ public class ActivityStorageTest extends AbstractCoreTest {
    * 
    * @since 1.2.12
    */
-  @MaxQueryNumber(860)
+  @MaxQueryNumber(890)
   public void testGetNumberOfNewerOnActivitiesOfConnectionsByTimestamp() {
     List<Relationship> relationships = new ArrayList<Relationship>();
     this.createActivities(3, maryIdentity);
