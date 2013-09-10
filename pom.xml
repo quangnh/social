@@ -93,6 +93,76 @@
         <groupId>org.exoplatform.social</groupId>
         <artifactId>social-component-common</artifactId>
         <version>${project.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.chromattic</groupId>
+            <artifactId>chromattic.api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.exoplatform.jcr</groupId>
+            <artifactId>exo.jcr.component.core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.exoplatform.kernel</groupId>
+            <artifactId>exo.kernel.commons</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.exoplatform.kernel</groupId>
+            <artifactId>exo.kernel.container</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.common</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.chromattic</groupId>
+            <artifactId>chromattic.core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.chromattic</groupId>
+            <artifactId>chromattic.spi</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.exoplatform.core</groupId>
+            <artifactId>exo.core.component.organization.api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.exoplatform.core</groupId>
+            <artifactId>exo.core.component.security.core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.pc</groupId>
+            <artifactId>pc-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.application-registry</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.common</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.portal</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.resources</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.gatein.portal</groupId>
+            <artifactId>exo.portal.component.web.controller</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.exoplatform.social</groupId>
